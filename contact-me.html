@@ -1,26 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>Contact Asia Bragg</title>
+<html lang="en">
+<head>
+    <title>Asia Bragg Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--This is my header-->
-        <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>Hi there, my name is Asia Bragg</h1>
-        <p>This is my Contact Page!</p>
-        </div>
+</head>
+<body>
+    <!--This is my Navigation-->
+    <nav class="navbar navbar-expand-md navbar-custom bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://via.placeholder.com/80x80.png?text=Asias+Logo">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="programmer.html">Programming</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="digital-artist.html">Digital Art</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-me.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-me.html">Contact Me</a>
+              </li>        
+            </ul>
+          </div> 
+    </nav>
 
-        <form>
-            <label for="name">Please include your name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for=""></label>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
+    <!--This is my Contact Form-->
+    <h1>Thanks for reaching out!</h1>
+    <p>Contact me below and I'll get back to you within 2 days.</p>
+    <form>
+      <fieldset>
+        <label for="name">Your Name:</label><br>
+        <input type="name" name="name"><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" name="email"><br>
+        <br>
+        <p>Please me an idea of what type of project you need:</p>
+        <label for="webdev">Front End Web Development</label>
+        <input type="checkbox" id="webdev" name="webdev" value="Front End Web Development"><br>
+
+        <label for="backend">Back End Web Development</label>
+        <input type="checkbox" id="backend" name="backend" value="Back End Web Development"><br>
+
+        <label for="data">Data Analytics</label>
+        <input type="checkbox" id="data" name="data" value="Data Analytics"><br>
+
+        <label for="data">Illustration</label>
+        <input type="checkbox" id="illustration" name="ilustration" value="Illustration"><br>
+        
+        <label for="data">Animation</label>
+        <input type="checkbox" id="animation" name="animation" value="Animation"><br>
+        <br>
+        <p>Send me a message if you want to add a little extra for me:</p>
+        <textarea name="message" rows="5" cols="25">Inlcude a message if you so desire.</textarea><br>
+        <input type="submit">
+      </fieldset>
+    </form>
+  </body>
 </html>
